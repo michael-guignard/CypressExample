@@ -11,11 +11,11 @@ jobs:
     basic-ubuntu-22-v9:
         runs-on: ubuntu-22.04
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-    
-            - name: Cypress tests
-              uses: ./
-              with:
-                working-directory: examples/v9/basic
-                build: npx cypress info
+          - name: Checkout
+            uses: actions/checkout@v3
+
+          - name: Cypress tests
+            uses: ./
+            with:
+              working-directory: examples/v9/basic
+              build: npx cypress info
